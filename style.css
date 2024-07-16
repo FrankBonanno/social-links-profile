@@ -103,6 +103,7 @@ img {
   gap: 1.5rem;
   align-items: center;
   flex-shrink: 0;
+  border-radius: 0.75rem;
 }
 
 .user {
@@ -162,4 +163,11 @@ img {
 .links a:hover {
   background-color: var(--clr-green);
   color: var(--clr-grey);
+}
+
+@media screen and (max-width: 400px) {
+  .card {
+    padding: 1.5rem;
+    width: 20.4375rem;
+  }
 }
