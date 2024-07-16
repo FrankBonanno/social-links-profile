@@ -1,0 +1,165 @@
+/* Vaiables */
+:root {
+  --clr-green: hsl(75, 94%, 57%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-grey: hsl(0, 0%, 20%);
+  --clr-dark-grey: hsl(0, 0%, 12%);
+  --clr-off-black: hsl(0, 0%, 8%);
+}
+
+/* Fonts */
+@font-face {
+  font-family: 'Inter';
+  src: url('assets/fonts/Inter-VariableFont.ttf') format('truetype-variations');
+  font-weight: 400 600 700;
+  font-style: normal;
+}
+
+/* Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: 'Inter', sans-serif;
+  background: var(--clr-off-black);
+  color: var(--clr-white);
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* General Styles */
+img {
+  width: 5.5rem;
+  height: 5.5rem;
+  border-radius: 50%;
+}
+
+.card {
+  background-color: var(--clr-dark-grey);
+  width: 24rem;
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem;
+  gap: 1.5rem;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-style: normal;
+  line-height: 150%;
+  gap: 0.25rem;
+  color: var(--clr-green);
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.user p:first-child {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--clr-white);
+}
+
+.desc {
+  color: var(--clr-white);
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  align-self: stretch;
+}
+
+.links a {
+  display: flex;
+  padding: 0.75rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  gap: 0.5rem;
+  align-self: stretch;
+  color: var(--clr-white);
+  text-decoration: none;
+  background-color: var(--clr-grey);
+
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+
+  transition: all 0.15s;
+}
+
+.links a:hover {
+  background-color: var(--clr-green);
+  color: var(--clr-grey);
+}
